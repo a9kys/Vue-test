@@ -1,0 +1,71 @@
+Question 1: 
+
+ I need to display the follwing data in this page:
+            i) Original price 
+            ii) Discount
+            iii) Sale price
+
+* i and ii are given or initialized when the page loads.
+* iii is calculated as : Sale price = (Original price) - discount
+
+Update the component Question1.vue to render the above data using string interpolation
+
+
+
+Question 2: 
+
+Question2.vue is the  parent component with the data property 'rating', initialized to 1.
+Component 'Child1.vue' is rendered within this component and the 'rating' property is passed into the child component.
+The child component displays both the parent rating and its own rating. The child component has a button to increase the child rating.
+How would you increase the parent's 'rating' whenever the child's rating is increased ?
+
+
+
+Question 4: 
+
+Question4.vue is the parent component. Component 'Child2.vue' is rendered with this component.
+Child2.vue has two containers , one for header and one for body. Assume you want to render a header tag <h1> in the header and a paragraph <p> in the body with some random message in it.
+How would you pass the contents from the parent component Question4.vue?
+
+
+Question 5: 
+
+Question5.vue is a simple component displaying the text 'Change my attributes'. It has two properties isError and isBold.
+There are three buttons , one to set isError = true, one to set isBold = true and one to set both to false.
+
+I want to change the color of the displayed text to 'red' when 'isError' is true,  make the text bold  when 'isBold' is true
+and revert back to the original text when reset is clicked.
+
+How would you achieve this?
+
+
+Question 6: 
+
+Question6.vue is a component with two containers elements. The component data is an array of students with 'id' and 'name'. 
+I want to display the names of the students whose ids are multiples of 2 in container 1 and whose ids are multiples of 3 in container 2.
+How would you achieve this?
+
+
+Question 7: 
+
+I want to collect some information from the user by rendering a form. The form should have the following fields:
+1) Full name (text input)
+2) Age (text input)
+3) Gender (radio buttons)
+4) Programming languages (check boxes with 3 options. i) Vuejs ii) C# iii) Angular )
+
+There should be a submit button at the end, on clicking it display the collected details below
+
+Question 8:
+
+Assuming you have created the form in question 7. I want to collect additional information if the user's age is above 22 and he likes the programming language 'Vue js'.
+So if the above conditions are met, then add one  more element in the form : 
+1) Experience - A select dropdown with the options : (1 year, 2 years , 3 years and  4 years and above)
+
+
+Question 9: 
+
+Assuming you have created the form in quesiont 7. On clicking submit , I want to navigate the user to a different page and display his name , age and his favourite programming languages
+
+Add a new page to display his details and add the logic to redirect the user to the new page on submit.
+

@@ -1,6 +1,11 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Home from "./views/Home.vue";
+import Question1 from "./views/Question1.vue";
+import Question2 from "./views/Question2.vue";
+import Question4 from "./views/Question4.vue";
+import Question5 from "./views/Question5.vue";
+import Question6 from "./views/Question6.vue";
+import Question7 from "./views/Question7.vue";
 
 Vue.use(Router);
 
@@ -9,18 +14,34 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: "/",
-      name: "home",
-      component: Home
+      path: "/question1",
+      name: "question1",
+      component: Question1
     },
     {
-      path: "/about",
-      name: "about",
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "about" */ "./views/About.vue")
+      path: "/question2",
+      name: "question2",
+      component: Question2
+    },
+    {
+      path: "/question4",
+      name: "question4",
+      component: Question4
+    },
+    {
+      path: "/question5",
+      name: "question5",
+      component: Question5
+    },
+    {
+      path: "/question6",
+      name: "question6",
+      component: Question6
+    },
+    {
+      path: "/question7",
+      name: "question7",
+      component: Question7
     }
   ]
 });
