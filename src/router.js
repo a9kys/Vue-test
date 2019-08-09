@@ -2,6 +2,7 @@ import Vue from "vue";
 import Router from "vue-router";
 import Question1 from "./views/Question1.vue";
 import Question2 from "./views/Question2.vue";
+import Question3 from "./views/Question3.vue";
 import Question4 from "./views/Question4.vue";
 import Question5 from "./views/Question5.vue";
 import Question6 from "./views/Question6.vue";
@@ -22,6 +23,11 @@ export default new Router({
       path: "/question2",
       name: "question2",
       component: Question2
+    },
+    {
+      path: "/question3",
+      name: "question3",
+      component: Question3
     },
     {
       path: "/question4",

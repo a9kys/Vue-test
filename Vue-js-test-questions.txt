@@ -19,7 +19,13 @@ Component 'Child1.vue' is rendered within this component and the 'rating' proper
 The child component displays both the parent rating and its own rating. The child component has a button to increase the child rating.
 How would you increase the parent's 'rating' whenever the child's rating is increased ?
 
-
+Question 3:
+In Question3.vue I want to display the following messages on certain events: 
+1. "I am destroyed" - When the component is about to be removed from the DOM
+2. "I am created" - When the component is created
+3. "I am in the DOM" - When the component is added to the DOM
+4. "I am about to be introduced to the DOM" - When the component is about to be added to the DOM
+5. "I am being created" - When the component is being created
 
 Question 4: 
 
