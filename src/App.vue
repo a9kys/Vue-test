@@ -6,7 +6,8 @@
       <router-link to="/question4">Question 4</router-link> |
       <router-link to="/question5">Question 5</router-link> |
       <router-link to="/question6">Question 6</router-link> |
-      <router-link to="/question7">Question 7</router-link> 
+      <router-link to="/question7">Question 7</router-link> |
+      <router-link to="/question8">Question 8</router-link> 
     </div>
     <router-view />
   </div>

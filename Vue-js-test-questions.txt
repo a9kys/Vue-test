@@ -62,16 +62,28 @@ I want to collect some information from the user by rendering a form. The form s
 
 There should be a submit button at the end, on clicking it display the collected details below
 
-Question 8:
+Question 7a:
 
 Assuming you have created the form in question 7. I want to collect additional information if the user's age is above 22 and he likes the programming language 'Vue js'.
 So if the above conditions are met, then add one  more element in the form : 
 1) Experience - A select dropdown with the options : (1 year, 2 years , 3 years and  4 years and above)
 
 
-Question 9: 
+Question 7b: 
 
 Assuming you have created the form in quesiont 7. On clicking submit , I want to navigate the user to a different page and display his name , age and his favourite programming languages
 
 Add a new page to display his details and add the logic to redirect the user to the new page on submit.
 
+Question 8 :
+
+Question8.vue is the parent component which has an array of items. 
+Button Add to top - Adds a new item to the beginning of the list
+The value of each item is the length of the array before the item is added.
+
+I want to render Component Child3.vue for each item in the list.
+Child3.vue takes in two props (index and item), and sets its own item value called myItem based on the item prop.
+
+Expectation : 
+On adding multiple items to the list, ensure that the data is shown correctly.
+The value of the new item added should be at the top of the list.
