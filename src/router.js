@@ -7,6 +7,7 @@ import Question4 from "./views/Question4.vue";
 import Question5 from "./views/Question5.vue";
 import Question6 from "./views/Question6.vue";
 import Question7 from "./views/Question7.vue";
+import Question8 from "./views/Question8.vue";
 
 Vue.use(Router);
 
@@ -48,6 +49,11 @@ export default new Router({
       path: "/question7",
       name: "question7",
       component: Question7
+    },
+    {
+      path: "/question8",
+      name: "question8",
+      component: Question8
     }
   ]
 });
