@@ -29,9 +29,10 @@ In Question3.vue I want to display the following messages on certain events:
 
 Question 4: 
 
-Question4.vue is the parent component. Component 'Child2.vue' is rendered with this component.
-Child2.vue has two containers , one for header and one for body. Assume you want to render a header tag <h1> in the header and a paragraph <p> in the body with some random message in it.
-How would you pass the contents from the parent component Question4.vue?
+Question4.vue is the parent component. Component 'Child2.vue' is rendered within this component.
+Child2.vue has two containers , one for header and one for body. 
+The parent component must be able to provide the content, including the html elements, that needs to be rendered within these containers.
+How would you would you achieve this?
 
 
 Question 5: 
@@ -87,3 +88,22 @@ Child3.vue takes in two props (index and item), and sets its own item value call
 Expectation : 
 On adding multiple items to the list, ensure that the data is shown correctly.
 The value of the new item added should be at the top of the list.
+
+
+Question 9 :
+
+XYXZ is a restaraunt with an online ordering app.
+The app has a page to display all the items available for ordering. Each item has an image with the name of the item displayed below it along with its price. 
+There is an option to select an item and it gets automatically added to my order.  I can also view additional details of an Item by clicking on it, which displays a popup with a detailed description of the item
+There is another page where I can view my current order. This page which lists the items that I have selected. I can view the details for each item by clicking on it, which displays a popup with a detailed description of the item
+Each item has an option to add add-ons, selecting the option displays a pop up with a list of add-ons available for the selected item, allowing you to select one or more add-ons
+
+Write down component design required to achieve this UI. Follow the following format to list down the components
+
+Components  
+    - List down the components that are shared or used within the components in /Views
+
+Views
+    - List down the componenst that represent the pages for different routes
+
+Note: Only list down the components in the above format in a text file. Don't need to create the actual app
