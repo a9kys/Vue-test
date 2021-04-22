@@ -7,7 +7,7 @@
         <button @click="addToTop()">Add  {{ items.length }} to top</button>
         <div>
             <div>
-                <Child3 v-for="(item,index) in items" :key="index" :index=index :item=item></Child3>
+                <Child3 v-for="(item,index) in items" :key="item" :index=index :item=item ></Child3>
             </div>
         </div>
     </div>

@@ -1,0 +1,20 @@
+Views/
+     -ItemPage.vue(show the items)
+       ItemPage will have ItemDetails as child component 
+       ItemPage will have AddItem as child component
+
+
+
+     -MyOrders.vue(shows the items which we ordered)
+       My Orders will have ItemDetails as child component
+       My Orders will have itemAddOns as a child component
+
+Components/
+      -ItemDetails.vue
+          -Properties(image,name,price,additional description)
+
+      -AddItem.vue(to add item to the cart)
+      -Addons.vue(will contain a list of items)
+         -will have ItemDetails as a child component to specify the properties of the item
+          
+      

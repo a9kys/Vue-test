@@ -2,10 +2,17 @@
   <div>
       <h5>Question 6</h5>
     <div class="container-1">
-        Render all items whose Ids are multiple of 2 here
+      <div>Students having id with a multiple of 2</div>
+      <div v-for="student in multipleOfTwo" :key="student.id">
+        <p>{{student.name}}</p>
+        </div>
+
     </div>
     <div class="container-2">
-        Render all items whose Ids are multiples of 3 here
+      <div>Students having id with a multiple of 3</div>
+        <div v-for="student in multipleOfThree" :key="student.id">
+        <p>{{student.name}}</p>
+        </div>
     </div>
   </div>
 </template>
@@ -43,6 +50,23 @@ export default {
         }
       ]
     };
+  },
+  computed:
+  {
+    multipleOfTwo:function()
+    {
+      return this.students.filter(function(student)
+      {
+         return (!(student.id & 1))
+      })
+    },
+    multipleOfThree:function()
+    {
+      return this.students.filter(function(student)
+      {
+        return ((student.id % 3)==0)
+      })
+    }
   }
 };
 </script>

@@ -1,13 +1,15 @@
 <template>
     <div>
         <h5>Question 5</h5>
-        <div id="test-container" >
+        <div id="test-container">
+            <div :class="{ 'red' :isError,'bold':isBold }">
             Change my attributes
-        </div>
         <br/>
         <button @click="isError=true">Set error</button>
         <button @click="isBold=true">Set bold</button>
         <button @click="reset">Reset</button>
+    </div>
+    </div>
     </div>
 </template>
 <script>
@@ -26,3 +28,12 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+.red{
+  color:red;
+}
+.bold{
+font-weight:bold;
+}
+</style>

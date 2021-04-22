@@ -3,7 +3,7 @@
     <div>
         <h5>Question 2</h5>
         
-        <child1 :parentRating="rating" ></child1>
+        <child1 :parentRating="rating" @increaseParent="updateParent($event)" ></child1>
     </div>
 </template>
 <script>
@@ -12,6 +12,13 @@ export default {
     data(){
         return {
             rating:1
+        }
+    },
+    methods:
+    {
+        updateParent(updatedRating)
+        {
+            this.rating=updatedRating;
         }
     },
     components:{
